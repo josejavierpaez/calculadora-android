@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cal.input.height">72dp</dimen>
+    <dimen name="cal.btn.size">64dp</dimen>
+    <dimen name="cal.btn.width">96dp</dimen>
+    <dimen name="cal.vertical.margin">16dp</dimen>
+</resources>

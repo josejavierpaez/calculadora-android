@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="main.min.length">8</integer>
+    <integer name="main.input.textSize">48</integer>
+</resources>

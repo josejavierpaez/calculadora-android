@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<dimen name="activity_horizontal_margin">32dp</dimen>-->
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="calc.input.height">128dp</dimen>
+    <dimen name="calc.btn.size">96dp</dimen>
+    <dimen name="calc.button.width">144dp</dimen>
+    <dimen name="calc.button.textSize">28sp</dimen>
+</resources>

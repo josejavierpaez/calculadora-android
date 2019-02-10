@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/contenMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/cal.horizontal.margin"
+    android:paddingTop="@dimen/cal.vertical.margin"
+    android:paddingRight="@dimen/cal.horizontal.margin"
+    android:paddingBottom="@dimen/cal.vertical.margin"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etInput"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cal.input.height"
+            android:drawableEnd="@drawable/ic_backspace_black_36dp"
+            android:drawablePadding="16dp"
+            android:gravity="end|center_vertical"
+            android:hint="@string/cal.hint.input"
+            android:inputType="none"
+            android:maxLength="16"
+            android:textIsSelectable="true" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/liMainRigth"
+        android:layout_width="@dimen/cal.btn.size"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tilInput"
+        android:layout_toEndOf="@id/liMainLeft"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnEight"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cal.btn.size"
+            android:text="@string/cal.btn.eight"
+            android:theme="@style/ButtonMD" />
+
+        <Button
+            android:id="@+id/btnFive"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cal.btn.size"
+            android:text="@string/cal.btn.five"
+            android:theme="@style/ButtonMD" />
+
+        <Button
+            android:id="@+id/btnTwo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cal.btn.size"
+            android:text="@string/cal.btn.two"
+            android:theme="@style/ButtonMD" />
+
+        <Button
+            android:id="@+id/btnZero"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cal.btn.size"
+            android:text="@string/cal.btn.zero"
+            android:theme="@style/ButtonMD" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liMainLeft"
+        android:layout_width="@dimen/cal.btn.size"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tilInput"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnSeven"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cal.btn.size"
+            android:text="@string/cal.btn.seven"
+            android:theme="@style/ButtonMD" />
+
+        <Button
+            android:id="@+id/btnFour"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cal.btn.size"
+            android:text="@string/cal.btn.four"
+            android:theme="@style/ButtonMD" />
+
+        <Button
+            android:id="@+id/btnOne"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cal.btn.size"
+            android:text="@string/cal.btn.one"
+            android:theme="@style/ButtonMD" />
+
+        <Button
+            android:id="@+id/btnPoint"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cal.btn.size"
+            android:text="@string/cal.btn.point"
+            android:theme="@style/ButtonMDDark" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlOperators"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tilInput"
+        android:layout_toEndOf="@id/liMainRigth">
+
+        <Button
+            android:id="@+id/btnNine"
+            android:layout_width="@dimen/cal.btn.size"
+            android:layout_height="@dimen/cal.btn.size"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/cal.btn.nine"
+            android:theme="@style/ButtonMD" />
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cal.btn.size"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@id/btnNine"
+            android:text="@string/cal.btn.clear"
+            android:theme="@style/ButtonMDDanger" />
+
+        <LinearLayout
+            android:id="@+id/llMidle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnNine"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSix"
+                android:layout_width="@dimen/cal.btn.size"
+                android:layout_height="@dimen/cal.btn.size"
+                android:text="@string/cal.btn.six"
+                android:theme="@style/ButtonMD" />
+
+            <Button
+                android:id="@+id/btnDiv"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/cal.btn.size"
+                android:layout_weight="50"
+                android:text="@string/cal.btn.betwen"
+                android:theme="@style/ButtonMDDark" />
+
+            <Button
+                android:id="@+id/btnMultiplication"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/cal.btn.size"
+                android:layout_weight="50"
+                android:text="@string/cal.btn.multi"
+                android:textAllCaps="false"
+                android:theme="@style/ButtonMDDark" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llMidle"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btThree"
+                android:layout_width="@dimen/cal.btn.size"
+                android:layout_height="@dimen/cal.btn.size"
+                android:text="@string/cal.btn.Three"
+                android:theme="@style/ButtonMD" />
+
+            <Button
+                android:id="@+id/btnSub"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/cal.btn.size"
+                android:layout_weight="1"
+                android:text="@string/cal.btn.sub"
+                android:theme="@style/ButtonMDDark" />
+
+            <Button
+                android:id="@+id/btnSum"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/cal.btn.size"
+                android:layout_weight="1"
+                android:text="@string/cal.btn.sum"
+                android:theme="@style/ButtonMDDark" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cal.btn.size"
+        android:layout_below="@id/rlOperators"
+        android:layout_toEndOf="@id/liMainRigth"
+        android:text="@string/cal.btn.result"
+        android:theme="@style/ButtonMDDarker" />
+</RelativeLayout>
